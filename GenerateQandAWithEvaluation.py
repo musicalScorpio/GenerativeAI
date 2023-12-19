@@ -78,7 +78,7 @@ def generate_questions_and_answers_and_evalaute (filename:str):
 
 def write_to_excel(file_name:str, questions,ans_from_qa_gen_langchain, real_ans_from_llm_langchain,real_graded_langchain):
     columns = ['Question', 'Answer for QAGeneration Chain', 'Real Answer from LLM', 'GRADED']
-    df1 = pd.DataFrame(list(zip(questions,ans_from_qa_gen_langchain,real_ans_from_llm_langchain,real_graded_langchain)),columns=columns)
+    df1 = pd.DataFrame(list(zip(questions,ans_from_qa_gen_langchain,real_ans_from_llm_langchain,real_graded_langchain)), columns=columns)
     df1.to_excel(file_name,  sheet_name='Eval')
 
 if __name__ == "__main__":
