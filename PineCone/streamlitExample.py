@@ -102,11 +102,7 @@ def getCorrectURL (keyToLookUp):
 
 
 def sentimentAnalysisUsignAPI(text):
-    key='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'
-    headers={}
-    headers["Authorization"] = f"Bearer {key}"
-    headers["OpenAI-Organization"] ="org-AhI65UBIYE8XyUsOJDKdqzqu"
-    x = requests.post(getCorrectURL("SENTIMENT_ANALYSIS"), data=text, headers=headers)
+   return ''
 
 
 
